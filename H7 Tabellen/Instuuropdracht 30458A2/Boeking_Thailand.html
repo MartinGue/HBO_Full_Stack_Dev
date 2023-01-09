@@ -5,35 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boekingsformulier Thailand</title>
-    <fieldset name="Factuur">
+</head>  
+<body>
+    <h1>Accomodatie Boeken</h1>
+    <p>Op deze pagina kunt u een bungalow op ons beach-resort boeken.</p>
+    <p>Ook vind u nog een aantal foto's en kunt nog een filmpje bekijken.</p>
+    <fieldset name="Boekingsformulier">
         <legend>           
            <span>Boekingsformulier</span>       
         </legend><br>
-   <fieldset name="verzendadres">
-       <legend>Verzendadres</legend>
+   <fieldset name="Adresgegevens">
+       <h2><legend>Adresgegevens:</legend></h2>
        
        <label>
-           <span>Naam</span><input type="text" name="verzend_naam">
+           <span>Naam:</span><input type="text" name="verzend_naam">
        </label><br>
        <label>
-           <span>Straat</span>
+           <span>Straat:</span>
            <input type="text" name="verzend_straat">
        </label><br>
        <label>
-           <span>Huisnummer</span>
+           <span>Huisnummer:</span>
            <input type="text" name="verzend_nummer">
        </label><br>
        <label>
-           <span>Postcode</span>
+           <span>Postcode:</span>
            <input type="text" name="verzend_postcode">
        </label><br>
        <label>
-           <span>Plaats</span>
+           <span>Plaats:</span>
            <input type="text" name="verzend_plaats">
-       </label>
-   </fieldset>
-</head>
-<body>
+       </label><br>
+       <label>
+        <span>Telefoonnummer:</span>
+        <input type="text" name="verzend_phone">
+    </label>
+       <label><br>
+        <span>Emailadres:</span>
+        <input type="email" name="verzend_email">
+    </label>
+   </fieldset><br>
+   
+   <fieldset>
+    <h2><legend>Reservering</legend></h2>
+   
+    <label>
+        <p><span>Aantal personen:</span><input type="number" name="verzend_aantal" min="1" required></p>
+        <p><label>
+        <span>Aankomstdatum:</span>
+        <input type="date" name="verzend_aankomstdatum" required>
+    </label></p>      
+    <form oninput="result.value = slider.value">
+        <label>Selecteer het aantal dagen:</label>
+        <input type="range" id="slider" min="0" max="100" step="1" value="10" required>             
+       <output name="result" for="slider">10</output> Dagen
+    </form> <br>  
+    <label>
+        <span>Verzorging:</span>
+        <input list="verzorging" id="verzorgings-lijst" name="verzend_verzorging" placeholder="Uw antwoord aub" required>
+        <datalist id="verzorging">
+            <option >Logies</option>
+            <option >Half Pension</option>
+            <option >Vol Pension</option>           
+        </datalist>       
+    </label><br>
+    <label>
+        <span>Accomodatietype:</span>
+        <input list="accomodatie" id="accomodatie-lijst" name="verzend_verzorging" placeholder="Uw antwoord aub" required>
+        <datalist id="accomodatie">
+            <option >Garden Villa</option>
+            <option >Beach View Villa</option>
+            <option >Beach Front Villa</option>           
+        </datalist>       
+    </label><br>
+   <p> <label>
+        <span>Annuleringsverzekering:</span>
+        <input type="radio" id="ja" name="verzend_verzekering" required>
+        <label for="ja">Ja</label>
+        <input type="radio" id="nee" name="verzend_verzekering" required>
+        <label for="nee">nee</label>
+    </label></p>
+    <p><textarea id="message" rows="4" cols="50" placeholder="Opmerkingen"></textarea></p>    
+</fieldset>
+<p><button onClick="location.href='danku.html'" type="button">Reserveer</button></p>
+    </fieldset>
     
+    <h2>Foto's</h2>
+    <img src="deluxe villa.jpg" alt="Deluxe Villa"></a>    
+    <img src="beach-view villa.jpg" alt="Beach View Villa"></a>
+    <img src="beach-front villa.jpg" alt="Beach Front Villa"></a>
+   
+    <h2>Live Stream vanaf ons resort</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bkDa8cCrjRs" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <p><button onClick="location.href='Hotel_Thailand.html'" type="button">Terug naar de hotelpagina</button></p>
+
 </body>
 </html>

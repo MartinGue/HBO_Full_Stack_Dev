@@ -12,8 +12,8 @@
     <p>Op deze pagina kunt u een bungalow op ons beach-resort boeken.</p>
     <p>Ook vind u nog een aantal foto's en kunt u live beelden vanuit ons resort bekijken.</p>
     <h1>Boekingsformulier</h1>
-<form action="https://jkorpela.fi/cgi-bin/echo.cgi">
-   <h2>Adresgegevens</h2>    
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+     <h2>Adresgegevens</h2>    
        
        <label>
            <span>Naam:</span><input type="text" required>
@@ -38,20 +38,16 @@
        <label>
         <span>Telefoonnummer:</span>
         <input type="text" required>
-    </label>
+        </label>
        <label><br>
         <span>Emailadres:</span>
         <input type="email" required>
-    </label>
-<br>   
-   
-    
-    <h2>Reservering</h2>
-   
-   
+        </label><br>    
+
+     <h2>Reservering</h2>   
         <p><span>Aantal personen:</span><input type="number" name="verzend_aantal" min="1" max="10" required></p>
         <p><span>Aankomstdatum:</span>
-        <input type="text" name="verzend_aankomstdatum" required><br></p>        
+        <input type="date" name="verzend_aankomstdatum" required><br></p>        
         <label>Selecteer het aantal dagen:</label>
         <input type="range" id="verblijfsDuur" min="2" max="20" step="2" value="10">
         <span id="aantalDagen"></span> dagen.
@@ -63,9 +59,8 @@
             slider.oninput = function() {
               output.innerHTML = this.value;
             }
-        </script>
-       <br><br>
-    <label>
+        </script><br><br>       
+     <label>
         <span>Verzorging:</span>
         <input list="verzorging" id="verzorgings-lijst" name="verzend_verzorging" placeholder="Uw antwoord aub" required>
         <datalist id="verzorging">
@@ -73,8 +68,8 @@
             <option >Half Pension</option>
             <option >Vol Pension</option>           
         </datalist>       
-    </label><br><br>
-    <label>
+     </label><br><br>
+     <label>
         <span>Accomodatietype:</span>
         <input list="accomodatie" id="accomodatie-lijst" name="verzend_accomodatie" placeholder="Uw antwoord aub" required>
         <datalist id="accomodatie">
@@ -83,29 +78,29 @@
             <option >Beach View Villa</option>
             <option >Beach Front Villa</option>           
         </datalist>       
-    </label><br>
-   <p> 
+     </label><br>
+     <p> 
         <span>Annuleringsverzekering:</span>
         <input type="radio" id="ja" name="verzend_verzekering" required>
         <label for="ja">Ja</label>
         <input type="radio" id="nee" name="verzend_verzekering" required>
         <label for="nee">nee</label>
-   </p>
-    <p><textarea id="message" rows="4" cols="50" placeholder="Opmerkingen"></textarea></p>    
+     </p>
+     <p><textarea id="message" rows="4" cols="50" placeholder="Opmerkingen"></textarea></p>    
 
- <!-- Form moet wel doorlopen anders geen input validatie mogelijk van de reservering -->
-<input type="submit"> 
-</form>     
-    
+     <!-- Form moet wel doorlopen anders geen input validatie mogelijk van de reservering -->
+        <input type="submit"> 
+    </form> 
+
     <a id="Fotos"><h2>Foto's</h2></a>
-    <img src="beach-frontvilla2.jpg" alt="Deluxe Villa">Deluxe Villa<br>
-    <img src="beach-frontvilla3.jpg" alt="Beach View Villa">Beach View Villa<br>
-    <img src="beach-frontvilla4.jpg" alt="Beach Front Villa">Beach Front Villa<br>
-    <img src="garden-villa.jpg" alt="Garden Villa">Garden Villa<br>
-    <h2>Live Stream vanaf ons resort</h2>
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bkDa8cCrjRs" 
-    title="YouTube video player"></iframe>
+    <img src="pics/beach-frontvilla2.jpg" alt="Deluxe Villa">Deluxe Villa<br>
+    <img src="pics/beach-frontvilla3.jpg" alt="Beach View Villa">Beach View Villa<br>
+    <img src="pics/beach-frontvilla4.jpg" alt="Beach Front Villa">Beach Front Villa<br>
+    <img src="pics/garden-villa.jpg" alt="Garden Villa">Garden Villa<br>
+   
+
+    <h2>Video vanaf ons resort</h2>    
+    <video src="pics/IMG_4663.mov" title="YouTube video player" width="800" height="400" controls></video>
     
     <p><button onClick="location.href='Hotel_Thailand.html'" type="button">Terug naar de hotelpagina</button></p>
 

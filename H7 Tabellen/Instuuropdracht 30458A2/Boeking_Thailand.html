@@ -8,58 +8,63 @@
 </head>  
 <body>
     <h1>Accomodatie Boeken</h1>
+    <p><button onClick="location.href='Hotel_Thailand.html'" type="button">Terug naar de hotelpagina</button></p>
     <p>Op deze pagina kunt u een bungalow op ons beach-resort boeken.</p>
-    <p>Ook vind u nog een aantal foto's en kunt nog een filmpje bekijken.</p>
-    <fieldset name="Boekingsformulier">
-        <legend>           
-           <span>Boekingsformulier</span>       
-        </legend><br>
-   <fieldset name="Adresgegevens">
-       <h2><legend>Adresgegevens:</legend></h2>
+    <p>Ook vind u nog een aantal foto's en kunt u live beelden vanuit ons resort bekijken.</p>
+    <h1>Boekingsformulier</h1>
+<form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+   <h2>Adresgegevens</h2>    
        
        <label>
-           <span>Naam:</span><input type="text" name="verzend_naam">
+           <span>Naam:</span><input type="text" required>
        </label><br>
        <label>
            <span>Straat:</span>
-           <input type="text" name="verzend_straat">
+           <input type="text" required>
        </label><br>
        <label>
            <span>Huisnummer:</span>
-           <input type="text" name="verzend_nummer">
+           <input type="text" required>
        </label><br>
        <label>
            <span>Postcode:</span>
-           <input type="text" name="verzend_postcode">
+           <input name="postcode" pattern="[1-9][0-9]{3}\s?[A-Z]{2}"
+            title="Een postcode bestaat uit 4 cijfers en twee hoofdletters" required>
        </label><br>
        <label>
            <span>Plaats:</span>
-           <input type="text" name="verzend_plaats">
+           <input type="text" required>
        </label><br>
        <label>
         <span>Telefoonnummer:</span>
-        <input type="text" name="verzend_phone">
+        <input type="text" required>
     </label>
        <label><br>
         <span>Emailadres:</span>
-        <input type="email" name="verzend_email">
+        <input type="email" required>
     </label>
-   </fieldset><br>
+<br>   
    
-   <fieldset>
-    <h2><legend>Reservering</legend></h2>
+    
+    <h2>Reservering</h2>
    
-    <label>
-        <p><span>Aantal personen:</span><input type="number" name="verzend_aantal" min="1" required></p>
-        <p><label>
-        <span>Aankomstdatum:</span>
-        <input type="date" name="verzend_aankomstdatum" required>
-    </label></p>      
-    <form oninput="result.value = slider.value">
+   
+        <p><span>Aantal personen:</span><input type="number" name="verzend_aantal" min="1" max="10" required></p>
+        <p><span>Aankomstdatum:</span>
+        <input type="text" name="verzend_aankomstdatum" required><br></p>        
         <label>Selecteer het aantal dagen:</label>
-        <input type="range" id="slider" min="0" max="100" step="1" value="10" required>             
-       <output name="result" for="slider">10</output> Dagen
-    </form> <br>  
+        <input type="range" id="verblijfsDuur" min="2" max="20" step="2" value="10">
+        <span id="aantalDagen"></span> dagen.
+        <script>
+            var slider = document.getElementById("verblijfsDuur");
+            var output = document.getElementById("aantalDagen");
+            output.innerHTML = slider.value;
+            
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+        </script>
+       <br><br>
     <label>
         <span>Verzorging:</span>
         <input list="verzorging" id="verzorgings-lijst" name="verzend_verzorging" placeholder="Uw antwoord aub" required>
@@ -68,37 +73,39 @@
             <option >Half Pension</option>
             <option >Vol Pension</option>           
         </datalist>       
-    </label><br>
+    </label><br><br>
     <label>
         <span>Accomodatietype:</span>
-        <input list="accomodatie" id="accomodatie-lijst" name="verzend_verzorging" placeholder="Uw antwoord aub" required>
+        <input list="accomodatie" id="accomodatie-lijst" name="verzend_accomodatie" placeholder="Uw antwoord aub" required>
         <datalist id="accomodatie">
             <option >Garden Villa</option>
+            <option>Deluxe Villa</option>
             <option >Beach View Villa</option>
             <option >Beach Front Villa</option>           
         </datalist>       
     </label><br>
-   <p> <label>
+   <p> 
         <span>Annuleringsverzekering:</span>
         <input type="radio" id="ja" name="verzend_verzekering" required>
         <label for="ja">Ja</label>
         <input type="radio" id="nee" name="verzend_verzekering" required>
         <label for="nee">nee</label>
-    </label></p>
+   </p>
     <p><textarea id="message" rows="4" cols="50" placeholder="Opmerkingen"></textarea></p>    
-</fieldset>
-<p><button onClick="location.href='danku.html'" type="button">Reserveer</button></p>
-    </fieldset>
+
+ <!-- Form moet wel doorlopen anders geen input validatie mogelijk van de reservering -->
+<input type="submit"> 
+</form>     
     
-    <h2>Foto's</h2>
-    <img src="deluxe villa.jpg" alt="Deluxe Villa"></a>    
-    <img src="beach-view villa.jpg" alt="Beach View Villa"></a>
-    <img src="beach-front villa.jpg" alt="Beach Front Villa"></a>
-   
+    <a id="Fotos"><h2>Foto's</h2></a>
+    <img src="beach-frontvilla2.jpg" alt="Deluxe Villa">Deluxe Villa<br>
+    <img src="beach-frontvilla3.jpg" alt="Beach View Villa">Beach View Villa<br>
+    <img src="beach-frontvilla4.jpg" alt="Beach Front Villa">Beach Front Villa<br>
+    <img src="garden-villa.jpg" alt="Garden Villa">Garden Villa<br>
     <h2>Live Stream vanaf ons resort</h2>
+    
     <iframe width="560" height="315" src="https://www.youtube.com/embed/bkDa8cCrjRs" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    title="YouTube video player"></iframe>
     
     <p><button onClick="location.href='Hotel_Thailand.html'" type="button">Terug naar de hotelpagina</button></p>
 

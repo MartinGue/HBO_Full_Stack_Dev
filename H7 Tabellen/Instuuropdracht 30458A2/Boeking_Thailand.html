@@ -22,14 +22,14 @@
     <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
       <h2>Adresgegevens</h2>
 
-      <label> <span>Naam:</span><input type="text" required> </label><br>
+      <label> <span>Naam:</span><input type="text" name="verzend_naam" required> </label><br>
       <label>
         <span>Straat:</span>
-        <input type="text" required> </label
+        <input type="text" name="verzend_straat" required> </label
       ><br>
       <label>
         <span>Huisnummer:</span>
-        <input type="text" required> </label
+        <input type="text" name="verzend_huisnummer" required> </label
       ><br>
       <label>
         <span>Postcode:</span>
@@ -42,26 +42,26 @@
       ><br>
       <label>
         <span>Plaats:</span>
-        <input type="text" required> </label
+        <input type="text" name="verzend_woonplaats" required> </label
       ><br>
       <label>
         <span>Telefoonnummer:</span>
-        <input type="text" required>
+        <input type="text" name="verzend_telefoonnummer" required>
       </label>
       <label
         ><br>
         <span>Emailadres:</span>
-        <input type="email" required> </label
+        <input type="email" title="Vul hier uw emailadres in" name="verzend_emailadres" required> </label
       ><br>
 
       <h2>Reservering</h2>
       <p>
         <span>Aantal personen:</span
-        ><input type="number" name="verzend_aantal" min="1" max="10" required>
+        ><input type="number" name="verzend_aantal_pax" min="1" max="10" required>
       </p>
       <p>
         <span>Aankomstdatum:</span>
-        <input type="date" name="verzend_aankomstdatum" required><br>
+        <input type="date" min="2023-01-10" name="verzend_aankomstdatum" required><br>
       </p>
       <label>Selecteer het aantal dagen:</label>
       <input
@@ -71,6 +71,7 @@
         max="20"
         step="2"
         value="10"
+        name="verzend_verblijfsdagen"
       >
       <span id="aantalDagen"></span> dagen.
       <script>
@@ -89,7 +90,7 @@
           list="verzorging"
           id="verzorgings-lijst"
           name="verzend_verzorging"
-          placeholder="Uw antwoord aub"
+          placeholder="Uw antwoord aub"          
           required
         >
         <datalist id="verzorging">
@@ -104,7 +105,7 @@
           list="accomodatie"
           id="accomodatie-lijst"
           name="verzend_accomodatie"
-          placeholder="Uw antwoord aub"
+          placeholder="Uw antwoord aub"          
           required
         >
         <datalist id="accomodatie">
@@ -127,6 +128,7 @@
           rows="4"
           cols="50"
           placeholder="Opmerkingen"
+          name="verzend_bericht"
         ></textarea>
       </p>
 

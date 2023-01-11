@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(89, 202, 247);
+  }
+  
+  h1 {
+    text-align:center;
+    font-family: 'Calibri';
+    font-size: 50px;
+    color: rgb(15, 91, 15);       
+  } 
+
+  /* line centered */
+  #box {   
+    width: 900px;    
+    border-bottom: 4px solid #99ff00; 
+    margin: 0 auto; 
+  } 
+
+  #box2 {   
+    width: 900px;    
+    border-bottom: 4px solid #99ff00; 
+    margin: 0 auto; 
+  } 
+
+  h1::first-letter {
+    color: rgb(112, 24, 227);        
+  }
+
+  h2 {
+    font-family: 'Calibri';
+    font-size: 30px;
+    color: blue;    
+  }  
+
+  h3 {
+    font-family: 'Verdana';
+    font-size: 30px;
+    text-align:center;
+    color: rgb(155, 18, 36);  
+     
+  }  
+
+  p {
+    text-align:center;
+    font-family: 'Calibri';
+    font-size: 20px;
+    color: rgb(3, 70, 24);    
+  }  
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+ :any-link {
+    text-decoration: none;   
+  }
+
+  a {
+    text-align:center;
+    font-family: 'Calibri';
+    font-size: 20px;
+    color: rgb(232, 76, 232);  
+
+  }
+
+ 
+ 

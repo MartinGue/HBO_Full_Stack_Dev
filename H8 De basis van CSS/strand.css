@@ -1,14 +1,15 @@
 @charset "utf-8";
 
 body {
-    background-color: rgb(89, 202, 247);
-  }
+  background-image: url("strand-groot.jpg");
+}
+
   
   h1 {
     text-align:center;
     font-family: 'Calibri';
     font-size: 50px;
-    color: rgb(15, 91, 15);       
+    color: rgb(241, 243, 241);       
   } 
 
   /* line centered */
@@ -46,7 +47,14 @@ body {
     text-align:center;
     font-family: 'Calibri';
     font-size: 20px;
-    color: rgb(3, 70, 24);    
+    color: rgb(231, 242, 235);    
+  }  
+
+  .im {
+    text-align:center;
+    font-family: 'Calibri';
+    font-size: 40px;
+    color: rgb(0, 0, 0);    
   }  
 
   .center {
@@ -64,5 +72,5 @@ body {
     text-align:center;
     font-family: 'Calibri';
     font-size: 20px;
-    color: rgb(232, 76, 232);  
+    color: rgb(19, 17, 19);  
   } 

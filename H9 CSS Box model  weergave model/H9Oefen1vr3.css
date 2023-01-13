@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body {    
+    text-align: center;    
+    font-size: 30px;
+}
+
+
+.eerste {
+    position:absolute; 
+    border-left: solid 10px yellow;   
+    padding: 30px; 
+    width: 130px;
+    height:140px;    
+    top: 0px;
+    left: 0px;
+    background-color: rgb(210, 21, 46);    
+  }
+  
+  .tweede {
+    position:absolute;
+    border-right: solid 10px green; 
+    padding: 30px; 
+    width: 130px;
+    height:140px;    
+    top: 0px;
+    right: 0px;
+    background-color: rgb(236, 232, 17);
+  }
+  
+  .derde {
+    border-bottom: solid 10px rgb(228, 18, 25); 
+    position:absolute;  
+    display: block;     
+    padding: 30px;        
+    width: 140px;
+    height:130px;     
+    top: 300px;    
+    top: 50%;
+    left: 50%;    
+    margin-left: -100px;    
+    background-color: rgb(16, 225, 37);
+  }

@@ -25,7 +25,7 @@ section.deel1 {
 div.a {
   position: relative;
   width: 102%;
-  margin-left: -0.75%;
+  margin-left: -0.9%;
 }
 
    span.a {
@@ -87,4 +87,41 @@ img.border {
   0 0 0 40px black;
   margin-bottom:50px;      
 }
+
+/* Table stylesheet */ /* Table stylesheet */
+#games {    
+  border-collapse: separate;
+  border:3px solid black;
+  width: 100%;
+  column-width: auto;
+  text-align: center;
+   
+}
+
+thead {
+  background-color: rgba(211, 211, 211, 1);
+}
+
+  #games td, #games th {
+    border: 1px solid rgb(243, 238, 238);      
+  }
+   
+  #games tr:hover {background-color: #ddd;}
+    
+  .salmon {
+    background-color: rgba(233, 188, 142, 0.763);    
+  } 
+
+  .orange {
+    background-color: rgba(251, 153, 5, 0.947);
+    text-align: center;
+  }
+
+  .light-orange {
+    background-color: rgba(244, 195, 123, 0.947);
+  }
+
+  .dash {
+    background-color: rgba(239, 237, 234, 0.947);
+  }
 

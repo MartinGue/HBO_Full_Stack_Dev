@@ -3,7 +3,7 @@ h2{
 }
 .img {  
   position: relative;   
-    text-align: center;
+    
     margin-left: auto;
     margin-right: auto;
     width: 70%;    
@@ -14,6 +14,7 @@ h2{
 
 
 section.deel1 { 
+  text-align: center;
     position: relative;         
     width: 100%;    
     padding: 5px;
@@ -22,21 +23,21 @@ section.deel1 {
   }
 
 div.a {
-  width: 100%;   
-   border: 1px solid blue;    
-  }
+  position: relative;
+  width: 102%;
+  margin-left: -0.75%;
+}
 
    span.a {
     display: inline-block;
     width: 49.5%;
-    height: 100px;    
-    border: 1px solid blue;         
+    height: 100px;               
   } 
-  span.b {  
+
+  div.b {  
     display: inline-block; 
     width: 49.5%;
-    height: 100%;    
-    border: 1px solid blue;         
+    height: 100%;                
   } 
 
 table, th, td {
@@ -44,9 +45,23 @@ table, th, td {
 }
 
   .pic {
-    max-width:100%;
+    position:relative;       
+    width: 101%;
   }
- 
+
+  .centered {  
+    display: flow-root;    
+    position:absolute;  
+    background-color: lightgrey;    
+    box-shadow: 0px 0px 0px 30px rgba(160, 154, 154, 0.8);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1.5%;
+    padding-top: 2%; 
+    margin-top: -15%;
+    margin-left: 6%;  
+    margin-right: 6%;      
+  } 
 
   section.deel2 { 
     position: relative;      
@@ -55,10 +70,16 @@ table, th, td {
     border: 3px solid silver;
     box-sizing: border-box;     
   }
-
-img.pica { 
-  margin-top: 2%; 
-  margin-left:25%;           
+    
+  .board {  
+    position: relative;   
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;    
+      box-sizing: border-box;    
+     }
+  
+img.border {               
   border: 3px solid #e80f0f; 
   height: 440px;
   width: 440px; 

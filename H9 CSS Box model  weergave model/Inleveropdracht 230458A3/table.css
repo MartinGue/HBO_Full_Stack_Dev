@@ -1,13 +1,18 @@
 #games {    
-    border-collapse: collapse;
-    width: 100%;
-    column-width: auto   
-  }
-  
-  
+  border-collapse: separate;
+  border:3px solid black;
+  width: 100%;
+  column-width: auto;
+  text-align: center;
+   
+}
+
+thead {
+  background-color: rgba(211, 211, 211, 1);
+}
+
   #games td, #games th {
-    border: 4px solid rgb(243, 238, 238);
-    text-align: center;  
+    border: 1px solid rgb(243, 238, 238);      
   }
   
  /*  #games tbody{
@@ -22,15 +27,19 @@
     color: rgb(5, 5, 5);
   } */
  
-  #games grey {
-    background-color: rgba(128,128,128,.25);
+  .salmon {
+    background-color: rgba(233, 188, 142, 0.763);    
+  } 
+
+  .orange {
+    background-color: rgba(251, 153, 5, 0.947);
+    text-align: center;
   }
-  thead {
-    background-color: rgba(128,128,128,25);
+
+  .light-orange {
+    background-color: rgba(244, 195, 123, 0.947);
   }
-  #games .red {
-    background-color: rgba(255,0,0,.25);
-  }
-  .blue {
-    background-color: rgba(0,0,255,.25);
+
+  .dash {
+    background-color: rgba(239, 237, 234, 0.947);
   }

@@ -4,19 +4,33 @@
     column-width: auto   
   }
   
+  
   #games td, #games th {
     border: 4px solid rgb(243, 238, 238);
     text-align: center;  
   }
   
-  #games tbody{
+ /*  #games tbody{
     background-color: #eed4a7
-}
+} */
 
   #games tr:hover {background-color: #ddd;}
   
-  #games th {       
+ /*  #games th {       
     text-align: center;
     background-color: lightgrey;
     color: rgb(5, 5, 5);
+  } */
+ 
+  #games grey {
+    background-color: rgba(128,128,128,.25);
+  }
+  thead {
+    background-color: rgba(128,128,128,25);
+  }
+  #games .red {
+    background-color: rgba(255,0,0,.25);
+  }
+  .blue {
+    background-color: rgba(0,0,255,.25);
   }

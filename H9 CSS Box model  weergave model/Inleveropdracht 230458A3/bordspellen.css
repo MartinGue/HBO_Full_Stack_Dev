@@ -46,12 +46,12 @@ table, th, td {
 
   .pic {
     position:relative;       
-    width: 101%;
+    width: 101%;   
   }
 
-  .centered {  
-    display: flow-root;    
-    position:absolute;  
+  .centered {         
+    position:absolute; 
+    width: 33.3%;     
     background-color: lightgrey;    
     box-shadow: 0px 0px 0px 30px rgba(160, 154, 154, 0.8);
     padding-left: 2%;
@@ -59,6 +59,7 @@ table, th, td {
     padding-bottom: 1.5%;
     padding-top: 2%; 
     margin-top: -15%;
+    margin-bottom: 50%;
     margin-left: 6%;  
     margin-right: 6%;      
   } 
@@ -94,8 +95,7 @@ img.border {
   border:3px solid black;
   width: 100%;
   column-width: auto;
-  text-align: center;
-   
+  text-align: center;   
 }
 
 thead {

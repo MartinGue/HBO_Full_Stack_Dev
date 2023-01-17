@@ -10,12 +10,19 @@
     /* the column grow the exact amount of the largest content*/
     grid-auto-rows: minmax(150px, auto);
     grid-row-gap: 20px;
+    /* ruimte tussen de boxes */
     grid-column-gap: 10px;
     grid-gap: 40px;
     /* grid-template-areas:
      "header header"
      "sidebar content"
      "sidebar content" */
+     justify-content: center;
+     align-content: stretch;
+     /* inhoud verschuiven, default is stretch */
+     justify-items: center ;
+     align-items: flex-start;
+
 }
 
 .grid-item-1 {

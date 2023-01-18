@@ -1,0 +1,172 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #E4E8D1;
+  }
+  
+main {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-top: solid 1px #C3C6B1;
+    max-width: 1200px; 
+  } 
+  
+  .multicol {
+    column-count: 2;
+    column-rule: solid 1px #C3C6B1;
+    column-gap: 2rem;
+    padding-right: 1.5rem;
+  }
+  
+  .full_col {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-left: solid 1px #C3C6B1;
+  }
+  
+  aside {
+    padding-left: 1.5rem;
+    border-left: solid 1px #C3C6B1;
+  }
+  
+  header {
+    column-span: all;
+  }
+  
+  header > p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
+  
+  p > em {
+    font-style: italic;
+  }
+  
+  .subhead { 
+    font-family: Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9em;
+    color: black;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    font-size: 8vw;
+    line-height: 15vw;
+    letter-spacing: -.1rem;
+    font-family: roc-grotesk-compressed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  main p {
+    text-align: justify;
+  }
+  
+  h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .9rem;
+    margin-top: 2rem;
+    margin-bottom: .2rem;
+  }
+  
+  h3 + p {
+    margin-top: 0;
+  }
+  
+  .multicol > p:first-of-type:first-letter {
+    float: left;
+    font-size: 6em;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 5rem;
+    margin-left: -5px;
+  }
+  
+  address {
+    border-top: solid 1px #C3C6B1;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: .75rem;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1rem;
+  }
+  
+  .allcaps {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  aside {
+    font-family: Helvetica, Arial, sans-serif;
+  
+  }
+  
+  aside h2 {
+    font-family: 'Volkhov', serif;
+    font-size: 4vw;
+  }
+  
+  aside h3 {
+    text-transform: none;
+  }
+  
+  b {
+    font-weight: bold;
+  }
+  
+  .legend {
+    column-count: 4;
+    column-rule: solid 1px #C3C6B1;
+    column-gap: 2rem;
+    counter-reset: alphaLegend;
+    font-size: .8em;
+  }
+  
+  .legend li {
+    counter-increment: alphaLegend;
+    position: relative;
+    padding-bottom: .5em;
+    margin-left: 2em;
+  }
+  
+  .legend li:before {
+    position: absolute;
+    content: counter(alphaLegend, upper-alpha);
+    color: white;
+    font-weight: bold;
+    line-height: 1.4rem;
+    background-color: black;
+    height: 1.6em;
+    width: 1.6em;
+    border-radius: 100%;
+    text-align: center;
+    top: 0;
+    left: -2em;
+  }
+  
+  .legend li:first-of-type:before {
+    background-color: #EA705E;
+  }
+  
+  aside ol {
+    margin-top: 1rem;
+    font-size: .6em;
+    line-height: 1.5em;
+  }
+  
+  aside img {
+    max-width: 90%;
+  }  
+ 

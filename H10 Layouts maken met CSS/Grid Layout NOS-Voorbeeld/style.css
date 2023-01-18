@@ -254,8 +254,10 @@
   
   @media screen and (min-width: 760px) {
     .feature__single {
+      /* Hier wordt de grid gemaakt */
       display: grid;
       gap: 1rem;
+      /* Hier het aantal kolommen */
       grid-template-columns: repeat(3, 1fr);
     }
     .feature__single ul {
@@ -331,6 +333,7 @@
   
   @media screen and (min-width: 900px) {
     .page-main {
+      /* Hier word de grid gemaakt */
       display: grid;
       gap: 1rem 2rem;
       grid-template-columns: 5fr 2fr;

@@ -7,10 +7,29 @@
     grid-template-columns: 150px 150px 150px 150px;
     grid-template-rows: repeat(4, 150px) ;
 }
-/* item 1 op rij 1 +2(row-end), dan kolom 1 tm 4 gevuld met de 3 items */
+/* item 1 op rij 1 + 2(row-end), dan kolom 1 tm 4 gevuld met de 3 items */
 .grid-item:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
+    border: 2px solid black;
+}
+
+.grid-item:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2; 
+    border: 2px solid black;
+}
+
+.grid-item:nth-child(3) {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+    border: 2px solid black; 
+}
+
+.grid-item:nth-child(4) {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 2;
+    border: 2px solid black; 
 }

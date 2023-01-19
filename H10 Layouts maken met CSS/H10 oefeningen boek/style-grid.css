@@ -47,6 +47,3 @@ footer {
     grid-template-rows: repeat(4, 100px);
     /* last bit is implicit grid ie automatically added to row5 */
 }
-
-
-

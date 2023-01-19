@@ -1,0 +1,63 @@
+* {
+    background-color: rgb(97, 92, 92);
+    text-align: center;
+}
+
+div {
+    background-color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 3px;
+}
+
+.flex-container>.grid {
+    background-color: rgba(226, 232, 238, 0.915);
+}
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.flex-container>div {
+    background-color: lightgrey;
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.grid-item-1 {
+    background-color: red;
+    size: 50px 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item-2 {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-item-3 {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    scroll-behavior: smooth;
+}
+
+h3 {
+    background-color: white;
+    margin: 0%;
+    font-size: 25px;
+}

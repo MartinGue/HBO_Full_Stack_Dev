@@ -1,4 +1,4 @@
-.card {
+.card {    
     align-items: center;
     display: flex;
     flex-flow: column;
@@ -69,3 +69,30 @@ p {
 a {
     align-self: center;
 }
+
+
+/* Centered text */
+.container {
+    position: relative;      
+  }
+
+.centered {  
+    font-size: 1.5vw; 
+    position: absolute;
+    bottom: 58%;    
+    left:3%;
+  }
+
+  /* .header_image {
+    position: relative;
+}
+.header_image img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header_image h2 {
+    display: inline-block;
+    vertical-align: middle;
+    max-width:80%;
+} */

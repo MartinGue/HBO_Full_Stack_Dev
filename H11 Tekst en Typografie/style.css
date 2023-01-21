@@ -1,0 +1,47 @@
+body {
+    font: 20px/1.5 Roboto, sans-serif;
+}
+
+ul {
+    display: none; 
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+}
+
+a:any-link {
+    color: inherit;
+    display: inline-block;
+    padding: 0.75em 0.25em;
+    text-decoration: none;
+}
+
+/* als het venster breder dan 760px is moeten
+ de li-items zichtbaar worden */
+@media screen and (min-width: 760px) {
+    ul {
+        display: flex;
+        gap: 0.5em;
+    }
+
+/* Om display intial te overschrijven met :none moet de checked 
+selector in deze @media query worden opgenomen ,
+met de attibuut selector wordt het label onzichtbaar gemaakt*/
+ 
+    :is(input:checked ~ ul, ul) {
+        display: flex;
+    }
+    [for="menu-toggle"] {
+        display: none;
+    }
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* selecteer <ul> sibling van <input> met de status checked en 
+maak dat element zichtbaar door het de initiele waarde te geven */
+input:checked ~ ul {
+    display: initial;
+}

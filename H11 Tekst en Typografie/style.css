@@ -1,12 +1,24 @@
+label {
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
-    font: 20px/1.5 Roboto, sans-serif;
+    font: 20px/1.5 Roboto, Brush Script MT;
+    color: blueviolet;
+}
+
+nav {
+    background-color: rgb(131, 237, 237);
+
 }
 
 ul {
-    display: none; 
+    display: none;
     list-style: none;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 a:any-link {
@@ -24,13 +36,14 @@ a:any-link {
         gap: 0.5em;
     }
 
-/* Om display intial te overschrijven met :none moet de checked 
+    /* Om display intial te overschrijven met :none moet de checked 
 selector in deze @media query worden opgenomen ,
 met de attibuut selector wordt het label onzichtbaar gemaakt*/
- 
+
     :is(input:checked ~ ul, ul) {
         display: flex;
     }
+
     [for="menu-toggle"] {
         display: none;
     }
@@ -42,6 +55,6 @@ met de attibuut selector wordt het label onzichtbaar gemaakt*/
 
 /* selecteer <ul> sibling van <input> met de status checked en 
 maak dat element zichtbaar door het de initiele waarde te geven */
-input:checked ~ ul {
+input:checked~ul {
     display: initial;
 }

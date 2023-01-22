@@ -2,4 +2,4 @@
 
 Voorbeelden uit de hoofdstukken.
 
-Opdrachten bij de opleiding Full-Stack Developer van de LOI.
+Opdrachten uit het boek en van de LOI campus bij de opleiding Full-Stack Developer van de LOI.

@@ -1,0 +1,64 @@
+header {
+    background-image: radial-gradient(red, orange, green, purple);
+    height: 30%;   
+    width: 100%;    
+    text-align: center;
+    font-size: 6em;
+    font-weight: 900;       
+    border: 5px solid black;
+    box-shadow: 0.33em 0.25em 0.6em 0.2em purple;    
+}
+
+header .gradient-text {    
+        text-transform: uppercase;
+        background: linear-gradient(to right, #b5f0f0 0%, #330867 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;           
+} 
+
+.container {
+    width: 90%;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: column;
+    border: 1px solid black;    
+    border: 3px solid red;
+    height: auto;    
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    flex-grow: 1;
+    padding: 10px;
+    border: 5px solid gray;
+    box-shadow: 0.33em 0.25em 0.6em 0.4em purple;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box1 {
+    background-color: yellow;
+}
+
+.box2 {
+    background-color: greenyellow;
+}
+
+.box3 {
+    background-color: rgb(100, 157, 14);
+}
+
+.box4 {
+    background-color: rgb(138, 150, 168)
+}
+
+.box5 {
+    background-color: rgb(47, 238, 255);
+}
+
+.box6 {
+    background-color: rgb(231, 47, 255);
+}

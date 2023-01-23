@@ -1,0 +1,49 @@
+.container {
+    text-align: center;    
+    position: relative;
+    width: 500px;
+    height: 500px;   
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 10%; 
+    padding-top: -40%;
+    padding-bottom: 7%;
+    margin-top: 10%; 
+    margin-bottom: 10%; 
+    
+}
+
+div {
+    width: 200px;        
+    border: 5px solid gray;
+    box-shadow: 0.33em 0.25em 0.6em 0.4em purple;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    mix-blend-mode:exclusion;    
+  }
+
+.circle1 {
+    position: absolute;
+    margin-top: 20%;    
+    background-color: red;   
+}
+
+.circle2 {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 20%;
+    background-color: greenyellow;
+}
+
+.circle3 {
+    position: absolute;
+    background-color: blue;
+    margin-left: 10%;
+    margin-top: 39%;
+}

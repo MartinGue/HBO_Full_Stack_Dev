@@ -1,0 +1,29 @@
+.grid-container {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 200px 200px ;    
+}    
+   
+
+.grid-container > div {    
+    text-align: center;
+    padding: 40px 0;
+    font-size: 30px;  
+  }
+
+.box1 {
+    background-color:hsl(235, 100%, 50%);
+}
+
+.box2 {
+    background-color: hsla(235, 100%, 50%, 1);
+}
+
+.box3 {
+    background-color: rgba(0, 0, 255, 1)
+}
+
+.box4 {
+    background-color: rgb(0,0,255)
+}

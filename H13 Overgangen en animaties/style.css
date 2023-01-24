@@ -1,0 +1,70 @@
+a {
+    color: hsl(220deg 100% 50%);
+    transition: all 750ms ease-in-out 50ms;
+}
+
+a:hover {
+    background-color: rgb(255, 132, 0);
+    color:white;
+}
+
+div {
+    width: 40%;
+    height: 40%;
+}
+
+.container {      
+    background-color: aliceblue;  
+    inline-size: 400px;
+    padding:  1em;
+    position: relative;
+    border: 3px solid green;
+}
+
+.slider {
+    position:absolute;
+    top: 5%;
+    left: 1em;
+    border: 3px solid red;
+    background-color: aqua;
+    inline-size: 90%;
+    block-size: 90%;
+    transition: all 500ms ease;
+}
+
+.container:hover .slider {    
+    transform: translate(100%, 100%)
+}
+
+.animatie {
+    animation-name: kleur;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: initial;
+    animation-direction: alternate;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+@keyframes kleur {
+    0% {
+        background-color: rgb(228, 174, 13);
+    }
+
+    25%  {
+        background-color: hsl(150 50% 75%);
+    }
+
+    50%  {
+        background-color: hsl(150 50% 50%);
+    }
+
+    75%  {
+        background-color: hsl(150 50% 25%);
+    }
+
+    100%  {
+        background-color: rgb(246, 6, 6);
+    }
+}

@@ -1,0 +1,7 @@
+#rand {
+    width: 140.8px;
+    height: 140.8px;
+    border: 10px solid transparent;    
+    border-image: url(rand.jpg) 50 round;
+    padding: 20px;
+  }

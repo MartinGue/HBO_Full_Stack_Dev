@@ -17,8 +17,8 @@ img {
 
 .box2 {
     max-width: 200px;
-    max-height: 200px;
-    background-image: url("/OefeningenLOI/OefenVr2.png");
+    max-height: 200px;    
+    background-image: url(/OefeningenLOI/Vr2/aas.jpg);
     background-repeat: repeat;
 }
 

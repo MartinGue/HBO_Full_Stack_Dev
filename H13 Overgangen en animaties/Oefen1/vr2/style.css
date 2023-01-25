@@ -1,0 +1,75 @@
+div {
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    width: 200px;
+    height: 200px;
+    font-size: 10px;
+}
+
+.animate {
+    animation-name: animation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;      
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+}
+
+@keyframes animation {
+    0% {
+        left: 0px; top: 0px;
+        border-radius: 0 0 0 0;  
+        background-color: rgb(228, 13, 13); 
+        font-size: calc(10px + 0px);       
+    }
+
+    11% {
+        background-color: rgb(242, 149, 9);
+        font-size: calc(10px +5px);
+    }
+
+    22% {       
+        background-color: rgb(251, 231, 11);
+        font-size: calc(10px + 10px);
+    }
+
+    33% {        
+        background-color: rgb(52, 216, 15);
+        font-size: calc(10px + 15px);
+    }
+
+
+    44% {
+        background-color: rgb(34, 96, 32);
+        font-size: calc(10px + 20px);
+    }
+
+    50% {
+        border-radius: 100% 100% 100% 100%;        
+        background-color: rgb(23, 237, 169);
+        font-size: calc(10px + 25px);
+    }
+
+    66% {
+        background-color: rgb(6, 234, 246);
+        font-size: calc(10px + 30px);
+    }
+
+    77% {
+        background-color: rgb(6, 66, 246); 
+        font-size: calc(10px + 35px);     
+    }
+
+    89% {
+        background-color: rgb(166, 15, 216);
+        font-size: calc(10px + 40px);
+    }
+
+    100% {
+        border-radius: 100% 100% 100% 100%;  
+        left: 0px; top: 200px;
+        background-color: rgb(216, 15, 92);
+        font-size: calc(50px + 0px);               
+    }
+}

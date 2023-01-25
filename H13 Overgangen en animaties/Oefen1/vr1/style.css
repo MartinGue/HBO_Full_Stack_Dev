@@ -1,0 +1,14 @@
+body {
+    background-color: hsl(185, 100%, 50%);
+}
+
+p{
+    color: white;
+    font-size: xx-large;
+    text-shadow: var(--text-shadow);
+}
+
+.first-var {
+    --text-shadow: 3px 3px;
+}
+

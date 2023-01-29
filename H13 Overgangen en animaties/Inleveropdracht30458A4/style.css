@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
 * {
    padding-left: auto;
     padding-right: auto;
     margin-left: 7px;
     margin-right: 5px;
+    font-family: "Trirong", sans-serif;
 }
 
 h1 {
-    text-shadow: .2em .2em .5em black;
-    font-family: "Sofia", sans-serif;
+    text-shadow: .2em .2em .5em black;    
 }
 
 h2 {
@@ -123,6 +128,7 @@ img.transparent {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 50px;
+    font-family: "Sofia", sans-serif;
     color: white;
     padding-top: 50px;
 }
@@ -189,7 +195,7 @@ img.transparent {
         margin-right: auto;       
         display: flex;
         flex-direction: row;
-        justify-content: left;
+        justify-content: center;
     }
 
 

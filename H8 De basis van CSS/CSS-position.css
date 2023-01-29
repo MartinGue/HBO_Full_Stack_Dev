@@ -1,0 +1,64 @@
+.parent {
+    position: relative;
+    height: 200vh;
+
+}
+
+.child-one {
+    position:relative; 
+    /* with relative positioning the element is removed from the document flow 
+    and adjusted relative to its own position in the html */
+    /* is not  */
+    left: 10px;
+}
+
+.child-two {
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    /* aboslute keeps the position abolute to the parent component */
+
+}
+
+.child-three {
+    position:sticky;
+    top: 0;
+     /* sticky position is a combination of relative(default)
+     but stays tru to the html page*/
+    
+}
+
+.child-four {
+    position:fixed;
+    top: 170px;
+     /* with position fixed the element stays true to the entire html page and  
+     not just the parent even when scrolling */  
+    
+}
+
+
+.parent {
+    padding: 5px;
+    background-color: #00AAFF;
+    font-size: 40px;
+  }
+  
+  .child {
+    padding: 5px;
+  }
+  
+  .child-one {
+    background-color: rgb(116, 255, 116);
+  }
+  
+  .child-two {
+    background-color: rgb(248, 117, 117);
+  }
+  
+  .child-three {
+    background-color: rgb(255, 116, 232);
+  }
+
+  .child-four {
+    background-color: rgb(236, 255, 116);
+  }

@@ -1,0 +1,94 @@
+/* CSS Document */
+
+.animate-block {
+
+    animation-name: step;
+    animation-duration: 20s;
+    animation-timing-function: lineair;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 200px;
+    height: 200px;
+    --f-step-size: 5px;
+    text-align: center;
+}
+
+@keyframes step {
+
+    0% {
+
+        background-color: hsl(0, 50%, 50%);
+
+        font-size: calc(2 * var(--f-step-size));
+
+    }
+
+    12.5% {
+
+        background-color: hsl(45, 50%, 50%);
+
+        font-size: calc(3 * var(--f-step-size));
+
+    }
+
+    25% {
+
+        background-color: hsl(90, 50%, 50%);
+
+        font-size: calc(4 * var(--f-step-size));
+
+    }
+
+    37.5% {
+
+        background-color: hsl(135, 50%, 50%);
+
+        font-size: calc(5 * var(--f-step-size));
+
+    }
+
+    50% {
+
+        background-color: hsl(180, 50%, 50%);
+
+        border-radius: 50%;
+
+        font-size: calc(6 * var(--f-step-size));
+
+        transform: translateY(200px);
+
+    }
+
+    62.5% {
+
+        background-color: hsl(225, 50%, 50%);
+
+        font-size: calc(7 * var(--f-step-size));
+
+    }
+
+    75% {
+
+        background-color: hsl(270, 50%, 50%);
+
+        font-size: calc(8 * var(--f-step-size));
+
+    }
+
+    87.5% {
+
+        background-color: hsl(315, 50%, 50%);
+
+        font-size: calc(9 * var(--f-step-size));
+
+    }
+
+    100% {
+
+        background-color: hsl(360, 50%, 50%);
+
+        font-size: calc(10 * var(--f-size));
+
+    }
+
+}

@@ -1,0 +1,8 @@
+#rand {
+    width: 140.8px;
+    height: 140.8px;
+    border: 10px solid transparent;    
+    border-image: url(rand.jpg) 50 round;
+    background-image: radial-gradient(circle, white 5px, blue);
+    padding: 20px;
+  }

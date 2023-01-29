@@ -1,0 +1,127 @@
+h2{
+    text-align: center;
+}
+.img {  
+  position: relative;   
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;    
+    padding: 5px;
+    border: 3px solid silver;
+    box-sizing: border-box;    
+   }
+
+
+section.deel1 { 
+  text-align: center;
+    position: relative;         
+    width: 100%;    
+    padding: 5px;
+    border: 3px solid silver;
+    box-sizing: border-box;     
+  }
+
+div.a {
+  position: relative;
+  width: 102%;
+  margin-left: -0.9%;
+}
+
+   span.a {
+    display: inline-block;
+    width: 49.5%;
+    height: 100px;               
+  } 
+
+  div.b {  
+    display: inline-block; 
+    width: 49.5%;
+    height: 100%;                
+  } 
+
+table, th, td {
+  border: 1px solid;
+}
+
+  .pic {
+    position:relative;       
+    width: 101%;   
+  }
+
+  .centered {         
+    position:absolute; 
+    width: 33.3%;     
+    background-color: lightgrey;    
+    box-shadow: 0px 0px 0px 30px rgba(160, 154, 154, 0.8);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1.5%;
+    padding-top: 2%; 
+    margin-top: -15%;
+    margin-bottom: 50%;
+    margin-left: 6%;  
+    margin-right: 6%;      
+  } 
+
+  section.deel2 { 
+    position: relative;      
+    width: 100%;   
+    padding: 2px;
+    border: 3px solid silver;
+    box-sizing: border-box;     
+  }
+    
+  .board {  
+    position: relative;   
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;    
+      box-sizing: border-box;    
+     }
+  
+img.border {               
+  border: 3px solid #e80f0f; 
+  height: 440px;
+  width: 440px; 
+  box-shadow: 0 0 0 20px white,
+  0 0 0 40px black;
+  margin-bottom:50px;      
+}
+
+/* Table stylesheet */ /* Table stylesheet */
+#games {    
+  border-collapse: separate;
+  border:3px solid black;
+  width: 100%;
+  column-width: auto;
+  text-align: center;   
+}
+
+thead {
+  background-color: rgba(211, 211, 211, 1);
+}
+
+  #games td, #games th {
+    border: 1px solid rgb(243, 238, 238);      
+  }
+   
+  #games tr:hover {background-color: #ddd;}
+    
+  .salmon {
+    background-color: rgba(233, 188, 142, 0.763);    
+  } 
+
+  .orange {
+    background-color: rgba(251, 153, 5, 0.947);
+    text-align: center;
+  }
+
+  .light-orange {
+    background-color: rgba(244, 195, 123, 0.947);
+  }
+
+  .dash {
+    background-color: rgba(239, 237, 234, 0.947);
+  }
+

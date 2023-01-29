@@ -1,0 +1,98 @@
+.card {    
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    /* flex 1 1 200px de kaart mag groeien en krimpen  minmaal 200px */
+    flex: 1 1 100px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    inline-size: 50px;
+    padding-block: 0.5rem;
+    padding: 1%;
+    border: 2px solid black;
+}
+
+.flex {
+    display: flex;
+    flex-flow: wrap;
+    gap: 2px;
+}
+
+img {
+    inline-size: 100%;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 2px;
+}
+
+.button2 {
+    background-color: gold;
+    border-radius: 4px;
+}
+
+.button3 {
+    border-radius: 8px;
+    background-color: crimson;
+}
+
+.button4 {
+    border-radius: 16px;
+}
+
+.button5 {
+    border-radius: 25%;
+}
+
+.button6 {
+    border-radius: 50%;
+}
+
+p {
+    flex: 10;
+}
+
+a {
+    align-self: center;
+}
+
+
+/* Centered text */
+.container {
+    position: relative;      
+  }
+
+.centered {  
+    font-size: 1.5vw; 
+    position: absolute;
+    bottom: 58%;    
+    left:3%;
+  }
+
+  /* .header_image {
+    position: relative;
+}
+.header_image img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header_image h2 {
+    display: inline-block;
+    vertical-align: middle;
+    max-width:80%;
+} */

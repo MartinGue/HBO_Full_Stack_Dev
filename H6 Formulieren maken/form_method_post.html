@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klant informatie</title>
+</head>
+<body>
+    <form method="POST">
+        <fieldset style="background: #f6f8ff; border: 2px solid #4238ca;">
+          <legend>Klant Informatie</legend>
+          <label>Voornaam</label><br>
+          <input type="text" name="Voornaam" placeholder="Voornaam" required><br /><br />
+          <label>Tussenvoegsel</label><br>
+          <input type="text" name="Tussenvoegsel" placeholder="Tussenvoegsel"><br /><br />
+          <label>Achternaam</label><br>
+          <input type="text" name="Achternaam" placeholder="Achternaam" required><br /><br />
+          <label>Email adres</label><br>
+          <input type="email" name="Emailadres" placeholder="Email" required><br /><br />
+          <label>Wachtwoord</label><br>
+          <input type="password" name="Wachtwoord" placeholder="Wachtwoord" required><br /><br />
+          <fieldset>
+            <legend>Bent u man of vrouw?</legend>            
+            <p> <label> <input type="radio" name="geslacht" value="M">Man</label></p>            
+            <p> <label> <input type="radio" name="geslacht" value="V">Vrouw</label></p>
+            <p> <label> <input type="radio" name="geslacht" value="N">Non-Binair</label></p>           
+            </fieldset><br>          
+
+          <label>Welke module wilt u graag volgen?
+            <select name="module">                
+                <optgroup label="Hobby">                
+                <option value="Filosofie">Filosofie</option>                
+                <option value="Voetverzorging">Voetverzorging</option>                
+                <option value="Beleggen">Beleggen voor beginners</option>                
+                </optgroup>                
+                <optgroup label="Talen">                
+                <option value="Spaans">Spaans voor beginners</option>                
+                <option value="Engels">Engels voor gevorderden</option>                
+                </optgroup>                
+                </select>                
+                </label>
+                <br>
+      
+          <button type="submit">Verzend</button>
+        </fieldset>      
+      </form>
+    
+</body>
+</html>

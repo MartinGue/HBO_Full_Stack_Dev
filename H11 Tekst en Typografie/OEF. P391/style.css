@@ -1,0 +1,30 @@
+* {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Audiowide", sans-serif;  
+}
+
+div {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
+
+div.a {
+  font-family: "Sofia", sans-serif;
+  font-size: large;
+  font-weight: bolder;
+}
+div.b {
+  font-family: "Trirong", serif;
+}
+
+p {
+  font-family: "Audiowide", sans-serif;
+  font-size: 3vh;
+}
+
+

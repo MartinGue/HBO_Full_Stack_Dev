@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+  h1 {
+    font-family: "Calibri";  
+  }
+
+  div.a {  
+    margin-left: 10%;  
+    font-family: "Calibri"; 
+    word-spacing: 1rem;   
+  }
+  
+  h2 {
+    font-family: "Roboto Condensed"; 
+    text-transform: uppercase;
+    text-shadow: .2em .2em .5em rgb(241, 20, 20); 
+  }  
+ 
+  div.b {
+    text-align: center;
+    font-family: "Roboto Condensed";
+  }
+  

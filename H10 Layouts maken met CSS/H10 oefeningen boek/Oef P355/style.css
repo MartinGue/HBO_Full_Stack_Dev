@@ -1,0 +1,44 @@
+h1 {
+    position: sticky;
+    inset-block-start: 0;
+}
+
+.relative {
+    position: relative;
+    block-size: 110px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    transform: rotate(-90deg);
+    border: 4px solid black;
+    margin-bottom: 30%;
+}
+
+.absolute {
+    position: absolute;
+    block-size: 110px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 4px solid black;
+}
+
+container {
+    display: flow-root;
+}
+
+img {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.float {
+    position: static;
+    block-size: 110px;
+    margin-top: 20%;
+    margin-right: 10%;
+}

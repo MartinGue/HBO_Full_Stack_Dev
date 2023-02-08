@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>Creating an object:</p>
+
+<div>Naam: <span id="demo-text"></span></div>
+<p>Leeftijd: <span id="age-text"></span></p>
+<h1>Oogkleur: <span id="oogkleur"></span></h1>
+
+<script>
+const person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo-text").innerHTML = person.firstName + " " + person.lastName;
+
+document.getElementById("age-text").innerHTML = person.age;
+
+document.getElementById("oogkleur").innerHTML = person.eyeColor;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript const</h2>
+
+    <p>Click the button to toggle between two constant arrays:</p>
+
+    <button onclick="toggleCars()" id="toggleButton">cars1</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars1 = ["Saab", "Volvo", "BMW"];
+        const cars2 = ["Toyota", "Volvo", "Audi"];
+        let cars = cars1;
+
+        document.getElementById("demo").innerHTML = cars;
+
+        function toggleCars() {
+            if (cars === cars1) {
+                cars = cars2;
+                document.getElementById("toggleButton").innerHTML = "cars2";
+            } else {
+                cars = cars1;
+                document.getElementById("toggleButton").innerHTML = "cars1";
+            }
+            document.getElementById("demo").innerHTML = cars;
+        }
+    </script>
+    This code defines two different constant arrays (cars1 and cars2), 
+    <br>
+    and then initializes a variable called "cars" to the first array.
+    <br>
+    When the button is clicked, the toggleCars() function is called,
+    <br>
+     which checks the current value of the "cars" variable
+     <br>
+      and swaps it with the other array accordingly. 
+      <br>
+      The new value of "cars" is then displayed on the page.
+
+
+
+</body>
+
+</html>

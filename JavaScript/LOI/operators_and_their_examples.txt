@@ -1,0 +1,24 @@
+Assignment Operators  example: a=1 or a= b + 1
+
+Arithmic Operators example const a = 10 * 10 or a = 12/4
+
+String Operators example let zin = "Dit is" + "een zin." parseInt() of parseFloat() can be used to add strings 
+                                    as numbers
+
+Logical Operators  example a = 1  b= 1  a&&b renders true | if a=1 b=2 a&&B renders false
+
+Bitwise operators work with binairy system -NOT -AND -OR -XOR and shift operators 12 & 10; // in binary this is 1100 & 1010,
+ so only the first digit is 1 in both cases << 8
+
+ Comparison Operators : a lot like logical but can be used also for numbers result becomes true or false 
+                            x= 10
+                            y=20 
+                            result = (x > y) false 
+                            result = (x < y) renders of course true.   
+
+Special operators : Ternary or voorwaardelijk (conditie) ? waarde_true : waarde false  waarde_true wordt uitgevoerd 
+                        als een conditie evalueert in de waarde true en omgekeerd.
+                    
+                    Operator typeof geeft het datatype aan zoals : typeof "een string"  is string  typeof 12 is number 
+
+Javascript heeft een stricte bewerkingsvolgorde met voorrangsregels over het algemeen geldt dat de haakjes voorrang hebben.

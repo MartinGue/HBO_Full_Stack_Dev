@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Enter a temperature in Fahrenheit:</p>
+
+<input type="text" id="fahrenheitInput" oninput="updateCelsius()">
+
+<p id="demo"></p>
+
+<script>
+const toCelsius = function(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+
+function updateCelsius() {
+  const fahrenheit = document.getElementById("fahrenheitInput").value;
+  const celsius = toCelsius(fahrenheit);
+  document.getElementById("demo").innerHTML = "The temperature is " + celsius.toFixed(2) + " Celsius";
+}
+</script>
+
+In this code, the toCelsius function is defined using a const variable instead of the function keyword. 
+This variable is then used to calculate the Celsius temperature in the updateCelsius function.
+
+</body>
+</html>

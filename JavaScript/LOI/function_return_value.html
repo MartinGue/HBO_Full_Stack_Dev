@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input[type="text"] {
+          padding: 10px;
+          font-size: 18px;
+          border: 2px solid #ddd;
+          border-radius: 5px;
+        }
+        
+        #demo {
+          font-size: 24px;
+          margin-top: 10px;
+        }
+        </style>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Enter a temperature in Fahrenheit:</p>
+
+<input type="text" id="fahrenheitInput" oninput="updateCelsius()">
+
+<p id="demo"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+function updateCelsius() {
+  const fahrenheit = document.getElementById("fahrenheitInput").value;
+  const celsius = toCelsius(fahrenheit);
+  document.getElementById("demo").innerHTML = "Temperature in Celsius: " + celsius;
+}
+</script>
+
+This code adds an input box with the ID "fahrenheitInput", and sets an "oninput" attribute to call a new function called "updateCelsius()" whenever the input value changes. The "updateCelsius()" function gets the current value of the input box, calls the "toCelsius()" function to convert the value to Celsius, 
+and then updates the content of the "demo" paragraph with the new result.
+
+</body>
+</html>
+
+
+
+
+

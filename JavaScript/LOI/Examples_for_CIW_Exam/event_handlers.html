@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Keyboard event handler
+        document.addEventListener("keydown", function (event) {
+            console.log("Key pressed: " + event.key);
+        });
+
+        // Mouse event handler
+        document.addEventListener("click", function (event) {
+            console.log("Mouse clicked at position: " + event.clientX + ", " + event.clientY);
+        });
+
+        // Touch event handler
+        document.addEventListener("touchstart", function (event) {
+            console.log("Touch started at position: " + event.touches[0].clientX + ", " + event.touches[0].clientY);
+        });
+    </script>
+</body>
+
+</html>

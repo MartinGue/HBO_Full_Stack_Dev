@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prototype function
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.getDetails = function() {
+  return "Name: " + this.name + ", Age: " + this.age;
+};
+
+// Anonymous function
+const add = function(x, y) {
+  return x + y;
+};
+
+// Closure function
+function outerFunction() {
+  const message = "Hello, ";
+  function innerFunction(name) {
+    return message + name;
+  }
+  return innerFunction;
+}
+
+const greet = outerFunction();
+console.log(greet("John")); // Output: "Hello, John"
+
+// Function with arguments and return value
+function multiply(x, y) {
+  return x * y;
+}
+
+console.log(multiply(2, 3)); // Output: 6
+
+    </script>
+</body>
+</html>

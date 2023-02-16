@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hoogste Nummer</title>
+  </head>
+  <body>
+    <h1>Find the Highest Number</h1>
+    <p>Enter two numbers:</p>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="findHighest()">Find Highest</button>
+    <p id="result"></p>
+
+    <script>
+        function findHighest() {
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+
+        let result = document.getElementById("result");
+
+        let message = (num1 === num2)
+          ? "The numbers are equal."
+          : (num1 > num2)
+            ? `${num1} is greater. ${num2} is smaller.`
+            : `${num2} is greater. ${num1} is smaller.`;
+
+        result.innerHTML = `${message}<br><br> You entered ${num1} and ${num2}.`;
+       
+      }
+    </script>
+  </body>
+</html>

@@ -88,17 +88,17 @@
         </div>
         <div id="keys">
             <div id="numbers">
-                <div onclick="addNumber(7)">7</div>
-                <div onclick="addNumber(8)">8</div>
-                <div onclick="addNumber(9)">9</div>
-                <div onclick="addNumber(4)">4</div>
-                <div onclick="addNumber(5)">5</div>
-                <div onclick="addNumber(6)">6</div>
-                <div onclick="addNumber(1)">1</div>
-                <div onclick="addNumber(2)">2</div>
-                <div onclick="addNumber(3)">3</div>
-                <div onclick="addNumber('.')">.</div>
-                <div onclick="addNumber(0)">0</div>
+                <div onclick="onClickNumber(7)">7</div>
+                <div onclick="onClickNumber(8)">8</div>
+                <div onclick="onClickNumber(9)">9</div>
+                <div onclick="onClickNumber(4)">4</div>
+                <div onclick="onClickNumber(5)">5</div>
+                <div onclick="onClickNumber(6)">6</div>
+                <div onclick="onClickNumber(1)">1</div>
+                <div onclick="onClickNumber(2)">2</div>
+                <div onclick="onClickNumber(3)">3</div>
+                <div onclick="onClickNumber('.')">.</div>
+                <div onclick="onClickNumber(0)">0</div>
                 <div onclick="onClickEquals('=')">=</div>
             </div>
             <div id="operators">
@@ -110,22 +110,21 @@
             </div>
         </div>
     </div>
-    <script>
-        // const player = prompt("Wat is uw naam?");
+    <script>        
         const myInput = document.getElementById("result");
         const myOperator = document.getElementById("operator");
 
-        function addNumber(clickedNumber) {
+        function onClickNumber(clickedNumber) {
             console.log(clickedNumber);
-            myInput.value += clickedNumber;
+            myInput.value = clickedNumber;
         }
-        function onClickOperator(evt) {
-            console.log(evt);
-            myOperator.value = evt;
+        function onClickOperator(clickedOperator) {
+            console.log(clickedOperator);
+            myOperator.value = clickedOperator;
 
         }
-        function onClickCancel(evt) {
-            console.log(evt);
+        function onClickCancel(clickedCancel) {
+            console.log(clickedCancel);
             myInput.value = "";
             myOperator.value = "";
         }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var bottles = 10; // bottles is initialized here instead
+
+        for (; bottles > 0;) { // empty initialization and increment
+
+            alert("There were " + bottles + " green bottles, hanging on the wall. And if one green bottle should accidently fall, there'd be "
+                + (bottles - 1) + " green bottles hanging on the wall");
+            bottles--; // increment moved into code block
+        }
+    </script>
+</body>
+
+</html>

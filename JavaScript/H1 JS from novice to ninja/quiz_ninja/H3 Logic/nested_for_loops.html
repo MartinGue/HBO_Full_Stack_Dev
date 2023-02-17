@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested 'for' loops</title>
+</head>
+
+<body>
+    The outer loop counts up from outer 1 to outer 4. For every iteration of the outer loop, the inner
+    loop counts up from innerNumber1 to innerNumber5. This means that it starts in the first iteration with outer = 1
+    and innerNumber 1, producing the following output:   
+    << 1 multiplied by 1 is 1
+    
+    <br>
+    <p id="text"></p>
+
+
+    In the next iteration, we are still inside the inner loop, so n remains as 1, but m is
+    incremented to 2, giving:
+    
+    << 1 multiplied by 2 is 2
+
+    <br>
+    
+    m continues to increase until it reaches 5. After this, we leave the inner loop and return to
+    the outer loop, where outer increases to 2. We then re-enter the inner loop and innerNumber is reset back
+    to 1 and begins counting up to 5 again. This continues until the last iteration produces the
+    line:
+   
+    << innerNumber 5 multiplied by outer 4 is 20
+
+
+    <script>  
+        var textElement = document.getElementById("text");
+       
+        textElement.appendChild(document.createElement("br"));
+            
+        for (var outer = 1; outer <= 4; outer++) {
+          textElement.appendChild(document.createTextNode("Outer Loop Number " + outer + ":"));
+          textElement.appendChild(document.createElement("br"));
+          
+          for (var inner = 1; inner <= 5; inner++) {
+            var resultText ="innerNumber" + inner + " multiplied by outer " + outer + " is " + outer * inner;
+            var lineBreak = document.createElement("br");
+            textElement.appendChild(document.createTextNode(resultText));
+            textElement.appendChild(lineBreak);
+          }
+        }        
+      </script>
+      
+
+</body>
+
+</html>

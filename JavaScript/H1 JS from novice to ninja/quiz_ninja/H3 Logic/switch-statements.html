@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="dice" style="font-size: 120px; text-align: left;"></div>
+    <button id="startButton" onclick="startRoll()">Start</button>
+    <button id="stopButton" onclick="stopRoll()">Stop</button>
+
+    In this modified code, the rolling variable is set to false at the beginning to indicate that the dice is not currently rolling. When the "Start" button is clicked, the startRoll function first checks whether the rolling variable is false. If it is, it sets the rolling variable to true and starts the dice rolling by setting the intervalId and calling the rollDice function repeatedly. If the rolling variable is already true, the startRoll function does nothing.
+<br>
+When the "Stop" button is clicked, the stopRoll function first checks whether the rolling variable is true. If it is, it stops the dice from rolling by clearing the intervalId. It then gets the rolled number by parsing the text content of the dice element, and uses a switch statement to show the appropriate alert. Finally, it sets the rolling variable back to false.
+<br>
+With this modification, the alert is shown after the "Stop" button is clicked and the dice has stopped rolling, and the dice won't start rolling again until the "Start" button is clicked.
+
+    <script>
+        var intervalId;
+        var rolling = false;
+        var numbers = [1, 2, 3, 4, 5, 6];
+
+        function rollDice() {
+            var randomIndex = Math.floor(Math.random() * numbers.length);
+            var rolledNumber = numbers[randomIndex];
+            document.getElementById("dice").innerText = rolledNumber;
+        }
+
+        function startRoll() {
+            if (!rolling) {
+                intervalId = setInterval(function() {
+                    rollDice();
+                    rolling = true;
+                }, 100);
+            }
+        }
+
+        function stopRoll() {
+            if (rolling) {
+                clearInterval(intervalId);
+
+                var rolledNumber = parseInt(document.getElementById("dice").innerText);
+                switch (rolledNumber) {
+                    case 4:
+                        alert("You rolled a four");
+                        break;
+                    case 5:
+                        alert("You rolled a five");
+                        break;
+                    case 6:
+                        alert("You rolled a six");
+                        break;
+                    default:
+                        alert("You rolled a number less than four");
+                        break;
+                }
+
+                rolling = false;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

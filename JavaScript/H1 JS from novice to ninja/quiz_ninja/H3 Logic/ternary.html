@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alertBox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+
+        .alertMessage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .alertMessage p {
+            margin: 0 0 10px 0;
+        }
+
+        .alertMessage button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="ageInput">Enter your age:</label>
+    <input type="number" id="ageInput">
+    <button onclick="checkAge()">Check Age</button>
+
+    <div id="alertBox" class="alertBox">
+        <div class="alertMessage">
+            <p id="alertText"></p>
+            <button onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        function checkAge() {
+
+            //retrieve value from ageInput and put in vaiable called 'age'
+            var age = document.getElementById("ageInput").value;
+
+            //create variable called message 
+            //check condition of variable 'age' , do a ternary to tell outcome to put in 'message' variable           
+            var message = age < 18
+                ? "Sorry, you are not old enough to play this game.."
+                : "Have fun playing the game!";
+
+                //then put outcome of  'message' in the alertText of the alertBox
+            document.getElementById("alertText").innerText = message;
+
+            //execute 
+            showAlert()
+        }
+
+        function showAlert() {
+            document.getElementById("alertBox").style.display = "block";
+        }
+
+        function closeAlert() {
+            document.getElementById("alertBox").style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

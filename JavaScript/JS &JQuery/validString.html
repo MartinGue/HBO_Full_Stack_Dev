@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid String?</title>
+</head>
+
+<body>
+    It asks the user to enter a string using prompt().
+    It defines a list of reserved words and ECMAScript 6 reserved words as an array of strings.
+    It sets isValid to true by default.
+    It checks if the user's input is an empty string, and if so, sets isValid to false.
+    It checks if the user's input is in the list of reserved words or ECMAScript 6 reserved words, and if so, sets
+    isValid to false.
+    If the input is not empty and not a reserved word, the script loops through each character in the string using a for
+    loop.
+    For each character, it uses a regular expression to check if the character is a letter or a number. If the character
+    is not a letter or a number, the script sets isValid to false and exits the loop using break.
+    After the loop finishes, the script checks the value of isValid. If it is still true, the string is considered
+    valid. If it is false, the string is considered not valid.
+    Finally, the script writes the result to the webpage using document.createElement() and appendChild().
+
+
+    <script>
+        // Ask the user to enter a string
+        const userInput = prompt("Please enter a string:");
+
+        // Define a list of reserved words and ECMAScript 6 reserved words
+        const reservedWords = ['break', 'case', 'catch', 'class', 'const',
+         'continue', 'debugger', 'default', 'delete', 'do', 'else', 'enum',
+          'export', 'extends', 'false', 'finally', 'for', 'function', 'if',
+           'import', 'in', 'instanceof', 'new', 'null', 'return', 'super', 
+           'switch', 'this', 'throw', 'true', 'try', 'typeof', 'var', 'void',
+            'while', 'with', 'yield', 'await', 'async', 'let', 'static'];
+
+        // Check if the string is valid
+        let isValid = true;
+        if (userInput === '') {
+            isValid = false;
+        } else if (reservedWords.includes(userInput)) {
+            isValid = false; 
+            message = " is een gereserveerd woord.";
+        } else {
+            for (let i = 0; i < userInput.length; i++) {
+                const currentChar = userInput[i];
+                if (!(/[a-zA-Z0-9]/).test(currentChar)) {
+                    isValid = false;
+                    break;
+                }
+            }
+        }
+
+        // Write the result to the webpage
+        const resultElement = document.createElement('p');
+        if (isValid) {
+            resultElement.textContent = "The string is valid!";
+        } else {
+            resultElement.textContent = `The string is not valid. ${message}`;
+        }
+        const body = document.querySelector('body');
+        body.appendChild(resultElement);
+
+
+    </script>
+
+</body>
+
+</html>

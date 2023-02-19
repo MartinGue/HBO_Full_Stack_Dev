@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three strings</title>
+
+</head>
+
+<body>
+<h1>I am using deprecated document.write for succinctness of the code Thanks!!</h1>
+
+    <script>
+        const string1 = "Martin Luther King zei: \"I have a dream\". ";
+        const string2 = "Installeer de juiste driver in C:\\Windows\\System ";
+        const string3 = "Hello" + " World!! ";
+
+        const concatenatedString = string1 + string2 + string3;
+
+        const totalCharacters = concatenatedString.length;
+
+
+        // Print the strings on the webpage
+        document.write(`<p>${string1}</p>`);
+        document.write(`<p>${string2}</p>`);
+        document.write(`<p>${string3}</p>`);
+        document.write(`<p>${concatenatedString}</p>`);
+
+        // Get the characters at positions 0, 5, and 10
+        const char1 = concatenatedString.charAt(0);
+        const char5 = concatenatedString.charAt(4);
+        const char10 = concatenatedString.charAt(9);
+
+        // Print the selected characters on the webpage
+        document.write(`<p>Character at position 0: ${char1}</p>`);
+        document.write(`<p>Character at position 5: ${char5}</p>`);
+        document.write(`<p>Character at position 10: ${char10}</p>`);
+        document.write(`The concatenated string has a total of ${totalCharacters} characters.`);
+
+
+        // Print the strings in the console
+        console.log(string1);
+        console.log(string2);
+        console.log(string3);
+        console.log(concatenatedString);
+
+        // Print the selected characters in the console
+        console.log(concatenatedString.charAt(0));  // first character
+        console.log(concatenatedString.charAt(4));  // 5th character
+        console.log(concatenatedString.charAt(9)); // 10th character
+        console.log(`The concatenated string has a total of ${totalCharacters} characters.`);
+    </script>
+
+</body>
+
+</html>

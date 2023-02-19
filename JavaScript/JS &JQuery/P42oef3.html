@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Ask the user to enter a text
+        const userText = prompt("Schrijf aub een tekst:");
+
+        // Write the text to the webpage
+        const textElement = document.createElement('p');
+        textElement.textContent = `De geschreven tekst is: ${userText}`;
+        const body = document.querySelector('body');
+        body.appendChild(textElement);
+
+        // Find the position of the first space in the text
+        const firstSpacePosition = userText.indexOf(' ') + 1 ;        
+
+        // Write the position to the webpage
+        const positionElement = document.createElement('p');
+        positionElement.textContent = `De positie van de eerste spatie ishiha het lukt: ${firstSpacePosition}`;
+        body.appendChild(positionElement);
+
+    </script>
+</body>
+
+</html>

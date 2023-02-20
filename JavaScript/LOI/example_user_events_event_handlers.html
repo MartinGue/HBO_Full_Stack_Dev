@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- user event taking place -->
+<button id="my-button">Hallo</button>
+
+    <script>
+        // Identify the button element in the HTML document
+        const button = document.querySelector('#my-button');
+
+        // Define the event handler function
+        function showMessage() {
+            alert('Hello, world!');
+        }
+
+        // Attach the event handler function to the button's click event
+        button.addEventListener('click', showMessage);
+
+    </script>
+</body>
+
+</html>

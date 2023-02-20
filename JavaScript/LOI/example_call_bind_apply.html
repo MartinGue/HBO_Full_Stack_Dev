@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Define a function that multiplies two numbers and returns the result
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        // Call the multiply function with two arguments
+        const result1 = multiply(2, 3);
+        console.log(result1, "call"); // Output: 6
+
+        // Use the call method to call the multiply function with different arguments
+        const result2 = multiply.call(null, 4, 5);
+        console.log(result2, "call"); // Output: 20
+
+        // Use the apply method to call the multiply function with an array of arguments
+        const args = [6, 7];
+        const result3 = multiply.apply(null, args);
+        console.log(result3, "apply"); // Output: 42
+
+        // Use the bind method to create a new function that multiplies by 10
+        const multiplyByTen = multiply.bind(null, 10);
+        const result4 = multiplyByTen(2);
+        console.log(result4, "bind"); // Output: 20
+
+    </script>
+</body>
+
+</html>

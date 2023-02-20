@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built_in_functions_&_cast_Variables</title>
+</head>
+
+<body>
+    <script>
+        // Declare a variable with a string value
+        let str = "42";
+
+        // Use the parseInt function to convert the string to a number
+        let num = parseInt(str);
+
+        // Use the built-in typeof operator to check the data type of the variable
+        console.log(typeof num); // Output: number
+
+        // Use the built-in Math object to perform calculations
+        let x = 2;
+        let y = 3;
+        let z = Math.pow(x, y); // Calculate x raised to the power of y
+        console.log(z); // Output: 8
+
+        // Use the built-in string methods to manipulate strings
+        let text = "hello, world!";
+        let newText = text.toUpperCase(); // Convert the string to uppercase
+        console.log(newText); // Output: "HELLO, WORLD!"
+
+        // Use the built-in Array methods to manipulate arrays
+        let arr = [1, 2, 3];
+        let sum = arr.reduce((acc, val) => acc + val); // Calculate the sum of the array elements
+        console.log(sum); // Output: 6
+
+    </script>
+</body>
+
+</html>

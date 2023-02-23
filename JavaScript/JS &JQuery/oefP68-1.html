@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De lus While()</title>
+</head>
+
+<body>
+    <h1>De Lus While()</h1>
+    <div id="divResult"></div>
+    <script>
+let teller = 10;
+let getal = 100;
+
+while (teller <= getal) {
+  document.getElementById("divResult").innerHTML +=
+    getal + " min " + 10 + " = " + (getal - 10) + "<br/>";
+  getal -= 10;
+}
+
+    </script>
+</body>
+
+</html>

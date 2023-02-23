@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window.document properties</title>
+</head>
+<body>
+    <button onclick="showDocumentProperties()">Show Document Properties</button>
+  
+    <div id="output"></div>
+  
+    <script>
+      function showDocumentProperties() {
+        var outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = "";
+        for (var prop in window.document) {
+          outputDiv.innerHTML += prop + "<br>";
+        }
+      }
+    </script>
+  </body>
+</html>

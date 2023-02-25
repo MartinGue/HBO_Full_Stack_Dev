@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewrite to while loops</title>
+</head>
+
+<body>
+    <div id="divResult">for loop<br></div>
+    <br>
+    <div id="divResult2">while loop<br></div>
+    <br>
+    <div id="divResult3">for loop<br></div>
+    <br>
+    <div id="divResult4">while loop<br></div>
+    <br>
+    <div id="divResult5">for loop<br></div>
+    <br>
+    <div id="divResult6">while loop<br></div>
+
+
+
+    <script>
+        for (let i = 8; i > 0; i--) {
+            document.getElementById("divResult").innerHTML += i + "<br>";
+        }
+
+        let i = 8;
+        while (i > 0) {
+            document.getElementById("divResult2").innerHTML += i + "<br>";
+            i--;
+        }
+
+        for (let j = 1; j <= 99; j = j * 2) {
+            document.getElementById("divResult3").innerHTML += j + "<br>";
+        }
+
+        let j = 1;
+        while (j <= 99) {
+            document.getElementById("divResult4").innerHTML += j + "<br>";
+            j = j * 2;
+        }
+
+        for (let nummer = 0; nummer <= 100; nummer++) {
+            if (nummer === '77') {
+                break;
+            }
+            document.getElementById("divResult5").innerHTML += nummer + "<br>";
+        }
+
+        let nummer = 0;
+        while (nummer <= 100) {
+            if (nummer === 77) {
+                break;
+            }
+            document.getElementById("divResult6").innerHTML += nummer + "<br>";
+            nummer++
+        }
+
+// if we use nummer = 77 in the last loops nothing is dispalyed because nummer is assigned a value of 77 thus causing
+//an infinite loop and hits the break statement immediately.
+
+//if we assign a string '77' then the loop will not stop until the condition <=100 is met.
+
+    </script>
+
+</body>
+
+</html>

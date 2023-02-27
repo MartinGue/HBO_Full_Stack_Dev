@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P76 Parameters Doorgeven</title>
+</head>
+
+<body>
+    <div id="divResult"></div>
+    <div id="divResult2"></div>
+
+
+    <script>
+        //1. Variabele Declareren
+        const mijnNaam = "Peter";
+        //2. Functie Declareren
+        function printNaam(naam) {
+            document.getElementById("divResult").innerHTML =
+                "<h2>Uw naam is: " + naam + "</h2>";
+        }
+        //3. Functie Aanroepen.
+        printNaam(mijnNaam);
+
+        // dit werkt ook:
+        const x = "Jaap";
+        function printname(y) {
+            document.getElementById("divResult2").innerHTML =
+                "<h2>Zijn naam is: " + y + "</h2>"            
+        }
+        printname(x);
+    </script>
+
+    <!-- De naam  van de variabele die wordt doorgegeven aan de functie hoeft 
+        dus niet gelijk te zijn aan de naam van de parameter -->
+
+</body>
+
+</html>

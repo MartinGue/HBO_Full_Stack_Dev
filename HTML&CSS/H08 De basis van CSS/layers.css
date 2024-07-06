@@ -1,0 +1,29 @@
+@layer reset,
+base,
+theme;
+
+a {
+  color: chocolate;
+
+  font-size: calc(70% * 3);
+}
+
+@layer reset {
+  p a {
+    color: green;
+
+    font-size: calc(20rem / 3);
+  }
+}
+
+@layer base {
+  a.link {
+    color: indianred;
+  }
+}
+
+@layer theme {
+  a {
+    color: deepskyblue;
+  }
+}

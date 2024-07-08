@@ -19,7 +19,7 @@ section.deel1 {
     width: 100%;    
     padding: 5px;
     border: 3px solid silver;
-    box-sizing: border-box;     
+    display: flow-root;    
   }
 
 div.a {
@@ -31,7 +31,7 @@ div.a {
 span.a {
     display: inline-block;
     width: 49.5%;
-    height: 100px;               
+    height: 102px;               
   } 
 
   div.b {  

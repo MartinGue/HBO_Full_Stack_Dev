@@ -24,11 +24,11 @@ section.deel1 {
 
 div.a {
   position: relative;
-  width: 101%;
-  margin-left: -0.8%;
+  width: 102%;
+  margin-left: -0.9%;
 }
 
-span.a {
+   span.a {
     display: inline-block;
     width: 49.5%;
     height: 100px;               
